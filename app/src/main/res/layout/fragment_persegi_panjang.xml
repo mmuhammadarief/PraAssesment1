@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PersegiPanjang" >
+
+    <EditText
+        android:id="@+id/editText_panjang"
+        android:layout_width="309dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/panjang"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_Lebar"
+        android:layout_width="309dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/lebar"
+        app:layout_constraintEnd_toEndOf="@+id/editText_panjang"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/editText_panjang"
+        app:layout_constraintTop_toBottomOf="@+id/editText_panjang" />
+
+    <Button
+        android:id="@+id/button_hitsegitiga"
+        android:layout_width="109dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="72dp"
+        android:text="@string/hitung"
+        app:layout_constraintEnd_toEndOf="@+id/editText_Lebar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editText_Lebar"
+        app:layout_constraintTop_toBottomOf="@+id/editText_Lebar" />
+
+    <Button
+        android:id="@+id/button_share"
+        android:layout_width="109dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/share"
+        app:layout_constraintEnd_toEndOf="@+id/textView_kel"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView_kel"
+        app:layout_constraintTop_toBottomOf="@+id/textView_kel" />
+
+    <TextView
+        android:id="@+id/textView_luas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="@string/luas"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/button_hitsegitiga"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/button_hitsegitiga"
+        app:layout_constraintTop_toBottomOf="@+id/button_hitsegitiga" />
+
+        <TextView
+        android:id="@+id/textView_kel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/keliling"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView_luas"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView_luas"
+        app:layout_constraintTop_toBottomOf="@+id/textView_luas" />
+
+        <TextView
+            android:id="@+id/text_hasilLuas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView_luas"
+            app:layout_constraintStart_toEndOf="@+id/textView_luas"
+            app:layout_constraintTop_toTopOf="@+id/textView_luas" />
+
+        <TextView
+            android:id="@+id/text_hasilKeliling"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView_kel"
+            app:layout_constraintStart_toEndOf="@+id/textView_kel"
+            app:layout_constraintTop_toTopOf="@+id/textView_kel" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

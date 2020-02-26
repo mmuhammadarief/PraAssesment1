@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".segitiga" >
+
+    <EditText
+        android:id="@+id/editText_panjang"
+        android:layout_width="309dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/alas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_tinggi"
+        android:layout_width="309dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/tinggi"
+        app:layout_constraintEnd_toEndOf="@+id/editText_panjang"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editText_panjang"
+        app:layout_constraintTop_toBottomOf="@+id/editText_panjang" />
+
+    <Button
+        android:id="@+id/button_hitsegitiga"
+        android:layout_width="110dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="68dp"
+        android:text="HITUNG"
+        app:layout_constraintEnd_toEndOf="@+id/editText_tinggi"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editText_tinggi"
+        app:layout_constraintTop_toBottomOf="@+id/editText_tinggi"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/button_share2"
+        android:layout_width="110dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/share"
+        app:layout_constraintEnd_toEndOf="@+id/textView_luasSegitiga3"
+        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintStart_toStartOf="@+id/textView_luasSegitiga3"
+        app:layout_constraintTop_toBottomOf="@+id/textView_luasSegitiga3" />
+
+    <TextView
+        android:id="@+id/textView_luasSegitiga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/luass"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/button_hitsegitiga"
+        app:layout_constraintHorizontal_bias="0.096"
+        app:layout_constraintStart_toStartOf="@+id/button_hitsegitiga"
+        app:layout_constraintTop_toBottomOf="@+id/button_hitsegitiga" />
+
+    <TextView
+        android:id="@+id/textView_luasSegitiga3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/kelilingg"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView_luasSegitiga"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView_luasSegitiga"
+        app:layout_constraintTop_toBottomOf="@+id/textView_luasSegitiga" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

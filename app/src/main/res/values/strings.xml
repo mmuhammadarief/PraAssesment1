@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Praass</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="segitiga">SEGITIGA</string>
+    <string name="persegi_panjang">PERSEGI PANJANG</string>
+    <string name="d3if_42_03">D3IF-42-03</string>
+    <string name="_6706184045">6706184045</string>
+    <string name="arief">ARIEF</string>
+    <string name="panjang">Panjang</string>
+    <string name="lebar">Lebar</string>
+    <string name="hitung">Hitung</string>
+    <string name="share">SHARE</string>
+    <string name="luas">Luas = ...</string>
+    <string name="keliling">Keliling = ...</string>
+    <string name="alas">Alas</string>
+    <string name="tinggi">Tinggi</string>
+    <string name="sharee">SHARE</string>
+    <string name="luass">Luas =</string>
+    <string name="kelilingg">Keliling =</string>
+</resources>
